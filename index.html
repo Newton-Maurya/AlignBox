@@ -651,6 +651,18 @@
     <script>
         var containerLeft = document.getElementById('container-left');
         var containerRight = document.getElementById('container-right');
+        if(innerWidth > 1180){
+            containerLeft.style.marginLeft = `${(innerWidth/100)*17.5 - 150}px`
+            containerRight.style.marginLeft = `${ ((innerWidth/100)*15.5) + 1650-  1050}px`
+        }
+        if(innerWidth < 1180 && innerWidth > 1030){
+            containerLeft.style.marginLeft = `${(innerWidth/100)*35.5 - 350}px`
+            containerRight.style.marginLeft = `${ ((innerWidth/100)*35.5) + 1340-  1050}px`
+        }
+        if(innerWidth < 1031 && innerWidth > 799){
+            containerLeft.style.marginLeft = `${(innerWidth/100)*10}px`
+            console.log(`${innerWidth}`);
+        }
         window.onresize = function () {scrollEffect()}
         function scrollEffect(){
             if(innerWidth > 1180){
