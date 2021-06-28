@@ -166,7 +166,7 @@ body{
     margin: 0px 0px 0px 105px;
     position: absolute;
     top: 80px;
-    width: 57.5%;
+    width: 772px;
 }
 .span-content{
     margin: 0px auto;
@@ -202,10 +202,8 @@ body{
 /* Container-Right */
 .container-right{
     position: absolute;
-    top: 80px;
+    top: -40px;
     max-width: 350px;
-    width: 100%;
-    right: 100px;
 }
 .container-right-1 a{
     color: black !important;
@@ -238,7 +236,7 @@ a{
     margin-bottom: 8px;
 }
 .width86{
-    width: 86%;
+    width: 100%;
 }
 .categorie-part{
     width: 100%;
@@ -259,8 +257,7 @@ a{
     background-color: #f1f1f1;
 
 }
-.container-right-2{
-    width: 86%;   
+.container-right-2{ 
 }
 .container-right-2-sub{
     background-color: white;
@@ -302,10 +299,10 @@ a{
     font-size: 23px;
 }
 /* footer */
-.footer{
+.footer {
     width: 100%;
     margin: 30px -170px;
-    margin-left: 161px;
+    margin-left: 200px;
     position: relative;
     bottom: 0px;
     display: inline-block;
@@ -333,4 +330,51 @@ a{
     display: inline-block;
     color: #428bca;
     margin-right: 5px;
+}
+/* Media Queries */
+@media screen and (max-width: 1180px) and (min-width: 1031px){
+    .box-img {
+        width: 300px;
+        height: 200px;
+    }
+    .quizBox {
+        width: 302px;
+        box-shadow: 0px 0px 10px #d0cdcd;
+        margin-right: 25px;
+        position: relative;
+        background-color: white;
+        margin-bottom: 35px;
+    }
+    .container-left {
+        margin: 0px 0px 0px 19px;
+        position: absolute;
+        top: 80px;
+        width: 64.5%;
+    }
+    .links {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .footer {
+        width: 100%;
+        margin: 30px -170px;
+        margin-left: 161px;
+        position: relative;
+        bottom: 0px;
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 1032px) and (min-width: 800px){
+    .container-left {
+        display: block;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+    }
+    .container-right {
+        position: absolute;
+        top: -40px;
+        display: none;
+        max-width: 350px;
+    }
 }
